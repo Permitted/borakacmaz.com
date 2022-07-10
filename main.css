@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&display=swap");
+
+:root {
+  ---clr-purple: #d71d5b;
+  ---clr-black: #000000;
+  ---clr-black-200: hsl(240, 12%, 20%);
+  ---clr-balck-300: hsl(345, 6%, 13%);
+  ---clr-white: hsl(0, 0%, 100%);
+  ---clr-white-200: hsl(207, 100%, 98%);
+  ---clr-blue: hsl(206, 88%, 55%);
+
+  --ff-primary: "Finlandica", sans-serif;
+
+  --fs-300: 0.975rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.75rem;
+  --fs-700: 3rem;
+
+  --spc-1: 1rem;
+  --spc-2: 2rem;
+  --spc-3: 3rem;
+  --spc-4: 4rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+/* Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove Default Margin */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--ff-primary);
+}
+
+/* Set Core Root Defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set Core Body */
+body {
+  background-color: var(---clr-black-200);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Image Reset */
+img,
+picture,
+svg {
+  display: block;
+}
+
+/* Link Reset */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: var(---clr-white);
+  font-weight: bold;
+}
+
+/* --- Utility Classes --- */
+
+/* Background Color */
+.bg-clr-black {
+  background-color: var(---clr-black);
+}
+
+.bg-clr-white {
+  background-color: var(---clr-white);
+}
+
+.bg-clr-purple {
+  background-color: var(---clr-purple);
+}
+
+.bg-clr-blue {
+  background-color: var(---clr-blue);
+}
+
+/* Text Color */
+.text-color-black {
+  color: var(---clr-black);
+}
+
+.text-color-white {
+  color: var(---clr-white);
+}
+
+.text-color-white-200 {
+  color: var(---clr-white-200);
+}
+
+.text-color-blue {
+  color: var(---clr-blue);
+}
+
+.text-color-purple {
+  color: var(---clr-purple);
+}
+
+/* Font Weight */
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.material-icons {
+  color: var(---clr-black);
+}
+
+/* --- Utility Classes End --- */
+
+/* --- Page Templates --- */
+.main-page-template {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "about"
+    "info"
+    "footer";
+}
+
+.blog-page-template {
+  display: grid;
+}
+
+.article-page-template {
+  display: grid;
+}
+
+/* --- Nav --- */
+.nav {
+  grid-area: nav;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logo element";
+}
+
+.nav-logo {
+  grid-area: logo;
+  justify-self: left;
+  align-self: center;
+}
+
+.nav-element {
+  grid-area: element;
+  justify-self: right;
+  align-self: center;
+}
+
+/* --- Nav End --- */
+
+/* --- Button --- */
+.button {
+  box-shadow: var(---clr-black) 3px 3px 0 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid var(---clr-black);
+  width: 90px;
+  min-width: 90px;
+  min-height: 20px;
+}
+
+.button:not([disabled]):active {
+  box-shadow: var(---clr-black) 1px 1px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* --- Button End --- */
+
+/* --- Card --- */
+.card-container {
+  display: grid;
+  grid-area: info;
+  align-items: center;
+  justify-items: center;
+  margin: 60px;
+  gap: var(--fs-300);
+}
+
+.card {
+  display: grid;
+  width: 500px;
+  min-width: 500px;
+  min-height: 200px;
+  margin: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: var(---clr-black);
+  border: var(---clr-black) solid 4px;
+  border-radius: 5px;
+  box-shadow: var(---clr-black) 3px 3px 0 1px;
+}
+
+.card-header {
+  justify-self: left;
+  align-self: center;
+}
+
+.card-summary {
+  justify-self: left;
+  align-self: center;
+  color: var(---clr-white-200);
+}
+
+/* --- Card End--- */
+
+/* --- About --- */
+.about-container {
+  display: grid;
+  grid-area: about;
+  align-items: center;
+  justify-items: center;
+}
+
+.about-card {
+  width: 800px;
+  min-width: 800px;
+  margin: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: var(---clr-black);
+  border: var(---clr-black) solid 4px;
+  border-radius: 5px;
+  box-shadow: var(---clr-black) 3px 3px 0 1px;
+}
+
+/* --- About End --- */

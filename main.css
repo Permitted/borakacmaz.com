@@ -1,69 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&display=swap");
 
 :root {
-  ---clr-purple: #d71d5b;
-  ---clr-black: #000000;
-  ---clr-black-200: hsl(240, 12%, 20%);
-  ---clr-balck-300: hsl(345, 6%, 13%);
-  ---clr-white: hsl(0, 0%, 100%);
-  ---clr-white-200: hsl(207, 100%, 98%);
-  ---clr-blue: hsl(206, 88%, 55%);
+    ---clr-purple: #d71d5b;
+    ---clr-black: #000000;
+    ---clr-black-200: #2d2d39;
+    ---clr-balck-300: #363636;
+    ---clr-white: #ffffff;
+    ---clr-white-200: #FBFFF1;
+    ---clr-white-300: #e0e0e0;
+    ---clr-blue: #279af1;
 
-  --ff-primary: "Finlandica", sans-serif;
+    --ff-primary: "Finlandica", sans-serif;
 
-  --fs-300: 0.975rem;
-  --fs-400: 1.125rem;
-  --fs-500: 1.25rem;
-  --fs-600: 1.75rem;
-  --fs-700: 3rem;
+    --fs-small: 0.75rem;
+    --fs-medium: 1.5rem;
+    --fs-large: 2.5rem;
+    --fs-xlarge: 5rem;
 
-  --spc-1: 1rem;
-  --spc-2: 2rem;
-  --spc-3: 3rem;
-  --spc-4: 4rem;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
 
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semi-bold: 600;
-  --fw-bold: 700;
+    --indent-space: 1rem;
+    --pading-space: 0.75rem;
 }
 
 /* Box-Sizing */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove Default Margin */
 * {
-  padding: 0;
-  margin: 0;
-  font-family: var(--ff-primary);
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff-primary);
 }
 
 /* Set Core Root Defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 /* Set Core Body */
 body {
-  background-color: var(---clr-black-200);
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    background: var(---clr-balck-300);
+    background-repeat: no-repeat;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* Image Reset */
 img,
 picture,
 svg {
-  display: block;
+    display: block;
 }
 
 /* Link Reset */
@@ -71,78 +70,120 @@ a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: var(---clr-white);
-  font-weight: bold;
+    text-decoration: none;
+    color: var(---clr-white);
+    font-weight: bold;
 }
 
 /* --- Utility Classes --- */
 
 /* Background Color */
 .bg-clr-black {
-  background-color: var(---clr-black);
+    background-color: var(---clr-black);
 }
 
 .bg-clr-white {
-  background-color: var(---clr-white);
+    background-color: var(---clr-white);
+}
+
+.bg-clr-white-200 {
+    background-color: var(---clr-white-200);
+}
+
+.bg-clr-white-300 {
+    background-color: var(---clr-white-300);
 }
 
 .bg-clr-purple {
-  background-color: var(---clr-purple);
+    background-color: var(---clr-purple);
 }
 
 .bg-clr-blue {
-  background-color: var(---clr-blue);
+    background-color: var(---clr-blue);
 }
 
 /* Text Color */
 .text-color-black {
-  color: var(---clr-black);
+    color: var(---clr-black);
 }
 
 .text-color-white {
-  color: var(---clr-white);
+    color: var(---clr-white);
 }
 
 .text-color-white-200 {
-  color: var(---clr-white-200);
+    color: var(---clr-white-200);
 }
 
 .text-color-blue {
-  color: var(---clr-blue);
+    color: var(---clr-blue);
 }
 
 .text-color-purple {
-  color: var(---clr-purple);
+    color: var(---clr-purple);
 }
 
 /* Font Weight */
 .fw-bold {
-  font-weight: var(--fw-bold);
+    font-weight: var(--fw-bold);
 }
 
 .fw-semi-bold {
-  font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-semi-bold);
 }
 
 .fw-medium {
-  font-weight: var(--fw-medium);
+    font-weight: var(--fw-medium);
 }
 
 .fw-regular {
-  font-weight: var(--fw-regular);
+    font-weight: var(--fw-regular);
 }
 
 .material-icons {
-  color: var(---clr-black);
+    color: var(---clr-black);
 }
 
+/* Font Size */
+.fs-header-big {
+    font-size: clamp(var(--fs-large), 9vw, var(--fs-xlarge));
+}
+
+.fs-header-medium {
+    font-size: clamp(var(--fs-small), 10vw, var(--fs-medium));
+}
+
+.fs-small {
+    font-size: var(--fs-small);
+}
+
+.fs-medium {
+    font-size: var(--fs-medium);
+}
+
+.fs-large {
+    font-size: var(--fs-large);
+}
+
+.fs-xlarge{
+    font-size: var(--fs-xlarge);
+}
+
+/* Text Indesnt */
+.text-indent{
+    text-indent: var(--indent-space);
+}
+
+/* Text Padding */
+.text-padding{
+    padding: 0 var(--pading-space);
+}
 /* --- Utility Classes End --- */
 
 /* --- Page Templates --- */
 .main-page-template {
-  display: grid;
-  grid-template-areas:
+    display: grid;
+    grid-template-areas:
     "nav"
     "about"
     "info"
@@ -150,111 +191,123 @@ a:active {
 }
 
 .blog-page-template {
-  display: grid;
+    display: grid;
 }
 
 .article-page-template {
-  display: grid;
+    display: grid;
 }
 
 /* --- Nav --- */
 .nav {
-  grid-area: nav;
+    grid-area: nav;
 }
 
 .nav-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "logo element";
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .nav-logo {
-  grid-area: logo;
-  justify-self: left;
-  align-self: center;
+    justify-self: center;
+    align-self: center;
 }
-
-.nav-element {
-  grid-area: element;
-  justify-self: right;
-  align-self: center;
-}
-
 /* --- Nav End --- */
 
 /* --- Button --- */
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 .button {
-  box-shadow: var(---clr-black) 3px 3px 0 1px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: 2px solid var(---clr-black);
-  width: 90px;
-  min-width: 90px;
-  min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(---clr-black) 3px 3px 0 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid var(---clr-black);
+    width: 110px;
+    min-width: 110px;
+    min-height: 20px;
 }
 
 .button:not([disabled]):active {
-  box-shadow: var(---clr-black) 1px 1px 0 0;
-  transform: translate(2px, 2px);
+    box-shadow: var(---clr-black) 1px 1px 0 0;
+    transform: translate(2px, 2px);
 }
 
+.button-icon{
+    padding: 3px 0;
+    margin: 10px 10px;
+}
 /* --- Button End --- */
 
 /* --- Card --- */
 .card-container {
-  display: grid;
-  grid-area: info;
-  align-items: center;
-  justify-items: center;
-  margin: 60px;
-  gap: var(--fs-300);
+    display: grid;
+    grid-area: info;
+    align-items: center;
+    justify-items: center;
 }
 
 .card {
-  display: grid;
-  width: 500px;
-  min-width: 500px;
-  min-height: 200px;
-  margin: 10px;
-  padding: 15px;
-  text-decoration: none;
-  color: var(---clr-black);
-  border: var(---clr-black) solid 4px;
-  border-radius: 5px;
-  box-shadow: var(---clr-black) 3px 3px 0 1px;
+    display: grid;
+    max-width: 50%;
+    min-width: 500px;
+    min-height: 200px;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: var(---clr-black);
+    border: var(---clr-black) solid 4px;
+    border-radius: 5px;
+    box-shadow: var(---clr-black) 3px 3px 0 1px;
 }
 
 .card-header {
-  justify-self: left;
-  align-self: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .card-summary {
-  justify-self: left;
-  align-self: center;
-  color: var(---clr-white-200);
+    justify-self: left;
+    align-self: center;
+    color: var(---clr-white-200);
 }
 
+.card-button{
+    justify-self: center;
+    align-self: center;
+}
 /* --- Card End--- */
 
 /* --- About --- */
 .about-container {
-  display: grid;
-  grid-area: about;
-  align-items: center;
-  justify-items: center;
+    display: grid;
+    grid-area: about;
+    align-items: center;
+    justify-items: center;
 }
 
 .about-card {
-  width: 800px;
-  min-width: 800px;
-  margin: 10px;
-  padding: 15px;
-  text-decoration: none;
-  color: var(---clr-black);
-  border: var(---clr-black) solid 4px;
-  border-radius: 5px;
-  box-shadow: var(---clr-black) 3px 3px 0 1px;
+    max-width: 70%;
+    min-width: 500px;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: var(---clr-black);
+    border: var(---clr-black) solid 4px;
+    border-radius: 5px;
+    box-shadow: var(---clr-black) 3px 3px 0 1px;
 }
-
 /* --- About End --- */
+
+/* --- Footer --- */
+.footer{
+    grid-area: footer;
+}
+/* --- Footer End --- */

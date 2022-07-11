@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Page Title</title>
-  <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" />
+  <title>Bora Kaçmaz</title>
 </head>
-
 <body>
   <div class="main-page-template">
     <!-- NAVBAR START  -->
@@ -15,81 +13,95 @@
       <div class="nav-logo">
         <img src="assets/white-logo.svg" alt="site logo">
       </div>
-      <div class="nav-element text-color-white">
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Projects</a>
-      </div>
     </nav>
     <!-- NAVBAR END -->
-
     <!-- HERO START-->
-    <div class="about-container">
-      <div class="about-card bg-clr-blue">
-        <h2>
-          Hello, I'm Bora Kaçmaz.
-        </h2>
-        <p class="fw-semi-bold text-color-white">
-          Software Engineer & back-end developer. Trying his best to be full-stack too.
-        </p>
-        <p class="fw-semi-bold text-color-white">
-          Nearly 3 year of professional experience with back-end and front-end development. Coding since 2012 with
-          passion.
-        </p>
+    <section class="about-container">
+      <div class="about-card bg-clr-purple">
+        <header>
+          <h2 class="fs-header-big">
+            Hello, <p>I'm Bora Kaçmaz.</p>
+          </h2>
+          <p class="fw-semi-bold text-color-white">
+            Software Engineer & back-end developer. Trying his best to be full-stack too.
+          </p>
+          <p class="fw-semi-bold text-color-white">
+            Nearly 3 year of professional experience with back-end and front-end development. Coding since 2012
+            with
+            passion.
+          </p>
+        </header>
       </div>
-    </div>
+    </section>
     <div class="card-container">
       <!-- CARD START -->
-      <section class="card-list">
-        <article class="card bg-clr-purple">
-          <header class="card-header">
-            <h2 class="">Hello there card example!</h2>
-          </header>
-          <div class="card-summary fw-semi-bold">
-            <p class="fw-semi-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-          <div>
-            <button class="button bg-clr-white">
-              <span class="material-icons">
-                double_arrow
-              </span>
-            </button>
-          </div>
-        </article>
-      </section>
-      <!-- CARD END  -->
-
-
-      <!-- CARD START -->
-      <section class="card-list">
         <article class="card bg-clr-blue">
           <header class="card-header">
-            <h2 class="">Hello there card example!</h2>
+            <h1 class="text-color-white">Working Experience & CV</h1>
           </header>
           <div class="card-summary fw-semi-bold">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
+              <p class="text-color-white">Via Bilgisayar Sistemleri (06.2019 - 12.2021)</p>
+                <p class="text-color-black text-indent">
+                    As a subcontractor firm employee in Havelsan, I worked as a java software engineer. I actively took part in the analysis, desing, development, testing and modul
+                delivery of a Ministry of Defence project.</p>
+                <h3>Duties</h3>
+              <ul class="text-color-black text-padding">
+                  <li>Taking care of designing and technical needs by leading/attending to analysis meetings.</li>
+                  <li>Taking part in preparing and arranging the system and software requirement documents.</li>
+                  <li>Making design decisions by using results of analysis and with the light of this information preparing mockups.</li>
+                  <li>Making developments on front-end and back-end of modules that are taken as tasks.</li>
+                  <li>Making developments on front-end and back-end of modules that are taken as tasks.</li>
+                  <li>Writing unit tests of developed modules.</li>
+                  <li>Making demos of the modules to the customer.</li>
+              </ul>
+                <h3>Skills</h3>
+              <ul class="text-color-black text-padding">
+                  <li>Development experience with Java (Version 8 and 8+), Spring Boot and Hibernate.</li>
+                  <li>Development experience with Go(Golang).</li>
+                  <li>Experience in RESTful web services with Go and Java.</li>
+                  <li>Active work experience in Microservice structure.</li>
+                  <li>Experience in SQL(Postgresql, Mysql).</li>
+                  <li>Ability to create/track tasks, tests and requirements on Jira.</li>
+                  <li>Intermediate level Docker knowledge.(Dockerizing applications, creating docker-files and compose files).</li>
+                  <li>Using git commands and interface experience that uses git structure (GitHub,
+                      Bitbucket).</li>
+                  <li>Experience in Agile/Scrum. (Worked as Product Owner for a long time).</li>
+                  <li>Entry level Jenkins usage and experience.</li>
+                  <li>Entry level gRPC experience.</li>
+              </ul>
           </div>
           <div class="card-button">
             <a href="https://drive.google.com/uc?export=download&id=1j32EHujxn0nXLeFyIQYCJEFWP_mhBjZm">
-              <button class="button bg-clr-white">
+              <button class="button button-icon">
+                  <span class="text-padding fw-semi-bold">CV(PFD)</span>
                 <span class="material-icons">
-                  double_arrow
+                   <img src="assets/download.svg" alt="download cv">
                 </span>
               </button>
             </a>
           </div>
         </article>
-      </section>
       <!-- CARD END -->
     </div>
     <!-- HERO END-->
     <!-- FOOTER START -->
     <div class="footer">
-
+        <div class="button-container">
+            <a href="https://github.com/Permitted">
+            <button class="button button-icon bg-clr-white">
+              <span class="material-icons">
+                <img src="assets/github.svg" alt="github icon">
+              </span>
+            </button>
+            </a>
+            <a href="https://www.linkedin.com/in/bora-kacmaz/">
+            <button class="button button-icon bg-clr-white">
+              <span>
+                <img src="assets/linkedin.svg" alt="linkedin icon">
+              </span>
+            </button>
+            </a>
+        </div>
     </div>
     <!-- FOOTER END -->
   </div>
